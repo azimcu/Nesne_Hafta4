@@ -21,7 +21,6 @@ public class InitArray {
 			
 			a = array[counter];
 			
-			
 			array[counter] = array[b];
 			
 			array[b] = a;
