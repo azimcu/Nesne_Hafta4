@@ -24,6 +24,7 @@ public class ZamanTest {
 		Time1 z = new Time1 (hour, minute,second);
 		
 		System.out.println(z.display());
+		
 
 	}
 

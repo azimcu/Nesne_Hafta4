@@ -5,6 +5,7 @@ public class Time1 {
 	private int hour;
 	private int minute;
 	private int second;
+	public static int count;
 	
 	
 	//source/generate con. using fields -> generate
@@ -63,4 +64,5 @@ public class Time1 {
 		return String.format("%02d:%02d:%02d %s", getHour(), getMinute(), getSecond(), "zaman");
 	}
 	
+
 }
