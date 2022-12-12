@@ -1,5 +1,6 @@
 package swing;
 
+import java.awt.Color;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -16,8 +17,8 @@ public class Swing1 {
 		
 		JFrame jf = new JFrame("ilk pencerem");
 		//jf.setTitle("ilk pencerem"); üstteki ile aynıdır
-		jf.setSize(500,600);	//width,length
-		jf.setLocation(200, 200);	//on screen location
+		jf.setSize(700,400);	//width,length
+		jf.setLocation(600, 200);	//on screen location
 		
 		jf.getContentPane().setLayout(new FlowLayout());	//container yapısı
 		
@@ -27,13 +28,13 @@ public class Swing1 {
 		label1.setText("Buraya isminizi giriniz:");
 		jf.getContentPane().add(label1);
 ;		jf.getContentPane().add(text1);
-		jf.getContentPane().add(button1);
 		
 		button1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				label1.setText("Merhabalar " + text1.getText() + ", programa hosgeldin");
 			}
 		});
+		jf.getContentPane().add(button1);
 		
 		JButton button2 = new JButton("Uyarı");
 		button2.addActionListener(new ActionListener() {
@@ -52,6 +53,12 @@ public class Swing1 {
 			}
 		});
 		jf.getContentPane().add(button3);
+		
+		JButton button4 = new JButton("Yeni Buton");
+		button4.setBackground(Color.green);
+		jf.getContentPane().add(button4);
+		
+		jf.getContentPane().setBackground(new Color(155,145,255));	//rgb
 		
 		
 		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);	//Sağ üstteki çarpının programı kapatmasını sağlar
